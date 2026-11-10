@@ -1,5 +1,4 @@
 # ===== Go build outputs =====
-bin/
 build/
 dist/
 *.exe

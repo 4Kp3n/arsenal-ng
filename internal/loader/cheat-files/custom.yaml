@@ -1,0 +1,11 @@
+tool: mytool
+tags: [recon, web, custom]
+
+actions:
+  - title: mytool - basic scan
+    desc: Performs a basic scan against the target
+    command: "mytool scan {{target}}"
+
+  - title: mytool - scan with multiple arguments
+    desc: Advanced scan with IP, port, and output file
+    command: "mytool scan -t {{ip}} -p {{port|443}} -o {{output|scan.log}}"
