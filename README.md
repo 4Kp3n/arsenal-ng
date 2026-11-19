@@ -1,12 +1,12 @@
 <h1 align="center">arsenal-ng</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Go-1.24.0+-00ADD8?style=flat&logo=go" alt="Go Version">
+  <img src="https://img.shields.io/badge/Go-1.26.0+-00ADD8?style=flat&logo=go" alt="Go Version">
   <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-lightgrey" alt="Platform">
   <img src="https://img.shields.io/github/license/halilkirazkaya/arsenal-ng?color=yellow" alt="License">
   <br>
-  <img src="https://img.shields.io/badge/Tools-248-blueviolet?style=flat&logo=linux&logoColor=white" alt="Tools Count">
-  <img src="https://img.shields.io/badge/Commands-2940-ff69b4?style=flat&logo=gnubash&logoColor=white" alt="Commands Count">
+  <img src="https://img.shields.io/badge/Tools-254-blueviolet?style=flat&logo=linux&logoColor=white" alt="Tools Count">
+  <img src="https://img.shields.io/badge/Commands-3017-ff69b4?style=flat&logo=gnubash&logoColor=white" alt="Commands Count">
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 ```bash
 go install -v github.com/halilkirazkaya/arsenal-ng/cmd/arsenal-ng@latest
 ```
-> Requires Go 1.24.0 Ensure `$(go env GOPATH)/bin` is in your `$PATH`.
+> Requires Go 1.26.0 Ensure `$(go env GOPATH)/bin` is in your `$PATH`.
 
 
 ### Option 2: Kali Linux (APT)
@@ -186,8 +186,10 @@ nmap -sS 10.10.10.10
 #### Argument Input View
 | Key | Action |
 |-----|--------|
-| `Tab` / `↓` | Move to next argument field |
+| `Tab` | Complete file path; with nothing to complete, move to next field |
+| `↓` | Move to next argument field |
 | `Shift+Tab` / `↑` | Move to previous argument field |
+| `Ctrl+N` / `Ctrl+P` | Cycle listed path completions |
 | `Enter` | Execute command with filled arguments |
 | `Esc` | Go back to search view |
 
@@ -327,7 +329,7 @@ actions:
 
 ### Prerequisites
 
-- Go 1.24.0 or higher
+- Go 1.26.0 or higher
 - Make (optional, for using Makefile)
 
 ### Building from Source
@@ -348,7 +350,7 @@ go build -o bin/arsenal-ng ./cmd/arsenal-ng
 ### Adding New Tools
 
 1. Create a new YAML file in `internal/loader/cheat-files/`
-2. Follow the format above (see [Cheat File Format](#-cheat-file-format))
+2. Follow the format above (see [Cheat File Format](#cheat-file-format))
 3. Rebuild: `make build`
 
 ### Testing
@@ -389,7 +391,17 @@ The easiest way to contribute is by adding new cheat sheet YAML files:
 4. Test your changes locally
 5. Submit a pull request
 
-See [Cheat File Format](#-cheat-file-format) for details.
+See [Cheat File Format](#cheat-file-format) for details.
+
+### Star History
+
+<a href="https://www.star-history.com/?repos=halilkirazkaya%2Farsenal-ng&type=date&legend=bottom-right">
+ <picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=halilkirazkaya/arsenal-ng&type=date&theme=light&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=halilkirazkaya/arsenal-ng&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=halilkirazkaya/arsenal-ng&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ---
 
